@@ -8,7 +8,7 @@ const NavbarAfterSignIN = (props) => {
   const Navigate = useNavigate();
 
   // axios.defaults.withCredentials = true;
-  const originURL = "http://localhost:8000";
+  const originURL = "https://swiptory5backend.onrender.com";
 
   const [shouldShowInfo, setshouldShowInfo] = useState(false);
   //addstory popUp state

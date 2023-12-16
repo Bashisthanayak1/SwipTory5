@@ -14,7 +14,7 @@ import Login from "../../LoginPopUP/LoginPopUp";
 const AutoSlider = (props) => {
   const Navigate = useNavigate();
   // axios.defaults.withCredentials = true;
-  const originURL = "http://localhost:8000";
+  const originURL = "https://swiptory5backend.onrender.com";
 
   // getting user Username from SS for a simple check is user logged in or not
   const username_from_sl = sessionStorage.getItem("username");

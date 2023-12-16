@@ -7,7 +7,7 @@ const Moviepage = () => {
   let Navigate = useNavigate();
 
   // axios.defaults.withCredentials = true;
-  const originURL = "http://localhost:8000";
+  const originURL = "https://swiptory5backend.onrender.com";
 
   const [foodArray, setFoodArray] = useState([]);
   const [showMoreClicked, setShowMoreClicked] = useState(false);

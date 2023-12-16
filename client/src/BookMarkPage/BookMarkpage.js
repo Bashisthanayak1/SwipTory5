@@ -8,7 +8,7 @@ const BookMarkpage = () => {
   let Navigate = useNavigate();
 
   // axios.defaults.withCredentials = true;
-  const originURL = "http://localhost:8000";
+  const originURL = "https://swiptory5backend.onrender.com";
 
   const username = sessionStorage.getItem("username");
 

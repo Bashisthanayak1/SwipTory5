@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Register = (props) => {
 
   // axios.defaults.withCredentials = true;
-  const originURL = "http://localhost:8000";
+  const originURL = "https://swiptory5backend.onrender.com";
 
   //useStates
   const [closeRegister, setCloseRegister] = useState(true);
