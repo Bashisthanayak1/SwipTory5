@@ -1,0 +1,56 @@
+body {
+  /* margin: 0px; */
+}
+.navbar {
+  border: 1px solid transparent;
+  width: 100vw;
+  height: 12vh;
+  box-shadow: 0 4px 15px #00000026;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-family: DM Sans, sans-serif;
+}
+.navbar > h2 {
+  margin-left: 2vw;
+  cursor: pointer;
+}
+.navbar button {
+  border: 1px solid transparent;
+  margin-right: 1.5vw;
+  color: white;
+  border-radius: 15px;
+  padding: 7px 20px;
+  font-weight: 900;
+  font-family: DM Sans, sans-serif;
+  cursor: pointer;
+}
+.navbar button:hover {
+  transform: scale(0.94);
+}
+.navbar button:nth-child(1) {
+  background-color: rgb(255, 115, 115);
+}
+.navbar button:nth-child(2) {
+  background-color: rgb(115, 171, 255);
+  padding: 7px 39px;
+}
+
+.Hamburger {
+  border: 1px solid transparent;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  display: none;
+}
+
+@media screen and (max-width: 757px) {
+  .Hamburger {
+    display: block;
+  }
+  .Reg_Sig--Large--page {
+    display: none;
+  }
+}

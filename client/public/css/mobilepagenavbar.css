@@ -1,0 +1,51 @@
+.Navbar--for--Mobile {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px #00000026;
+  position: absolute;
+  top: 3;
+  background-color: white;
+  z-index: 4;
+}
+
+.Navbar--for--Mobile > div button {
+  display: block;
+  border-radius: 30px;
+  margin-top: 2.5vh;
+  cursor: pointer;
+  background-color: rgb(255, 115, 115);
+  color: white;
+  border-color: transparent;
+  font-weight: 700;
+  font-family: DM Sans, sans-serif;
+  margin: auto;
+  margin-top: 2vh;
+}
+
+.Navbar--for--Mobile > div button:hover {
+  transform: scale(0.94);
+}
+
+.Navbar--for--Mobile > div button:nth-child(1) {
+  padding: 0.8vw 2vw;
+}
+.Navbar--for--Mobile > div button:nth-child(2) {
+  padding: 0.8vw 3.5vw;
+}
+
+.mobile__popUp_X {
+  font-size: 5vw;
+  cursor: pointer;
+  position: absolute;
+  top: 2vw;
+  right: 0;
+}
+
+@media screen and (min-width: 757px) {
+  .Navbar--for--Mobile {
+    display: none;
+  }
+}

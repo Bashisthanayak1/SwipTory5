@@ -1,0 +1,219 @@
+.AfterSignIN--div {
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.NavbarAfterSignIN--button {
+  background-color: rgb(255, 115, 115);
+  color: white;
+}
+
+#Addstory--button {
+  background-color: rgb(255, 115, 115);
+  color: white;
+}
+.user__profile_photo {
+  border: 1px solid transparent;
+  width: 4vw;
+  height: 4vw;
+}
+
+.Info--Logout {
+  border: 2px solid transparent;
+  position: absolute;
+  right: 1vw;
+  background-color: white;
+  top: 42px;
+  z-index: 6;
+  text-align: center;
+  padding: 2.4vw;
+}
+#Logout--button {
+  margin: auto;
+  background-color: rgb(255, 115, 115);
+}
+#Logout--button:hover {
+  transform: scale(1.1);
+}
+/* extra 3 buttons are hidden */
+.Three_hidden_button {
+  display: none;
+}
+.user__profile_photo_smallSCR {
+  display: none;
+}
+
+/* ***************** */
+.Add--story--container {
+  position: absolute;
+  border: 1px solid transparent;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  right: 0.1vw;
+  background-color: rgb(102, 102, 102, 0.4);
+  z-index: 9;
+}
+.add--story--div {
+  position: relative;
+  width: 50vw;
+  height: auto;
+  top: 10vh;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  padding: 2vw 0vw;
+  font-weight: 500;
+  font-family: DM Sans, sans-serif;
+  z-index: 10;
+  text-align: center;
+}
+.add--story--div__cross {
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: -38px;
+  right: -23px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: red;
+}
+.add--story--div__cross:hover {
+  transform: scale(0.8);
+}
+.slide--button--container {
+  border: 1px solid transparent;
+  text-align: left;
+  margin-left: 7%;
+}
+.slide--button--container > button {
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 15px #0000001a;
+  border-radius: 0px;
+  padding: 2% 1%;
+  margin-top: 1%;
+}
+.slide--button--container > button:first-child {
+  background-color: white;
+}
+.slide--button--container > button:nth-child(2) {
+  background-color: white;
+  padding: 2% 1%;
+}
+
+/* slidebox x sign */
+.A--New--Slide {
+  position: relative;
+}
+.A--New--Slide.clicked {
+  border: 2px solid rgb(115, 171, 255);
+  border-radius: 5px;
+}
+.A--New--Slide > span {
+  color: red;
+  position: absolute;
+  right: -10px;
+  top: -14px;
+  font-size: 10px;
+}
+.A--New--Slide > span:hover {
+  transform: scale(1.2);
+}
+.A--New--Slide > span {
+  cursor: auto;
+}
+
+.label--inputs--div {
+  border: 1px solid transparent;
+  width: 100%;
+  height: auto;
+  margin: 1% 0%;
+  text-align: start;
+}
+.add--story--div label {
+  font-size: 1.2vw;
+  margin-left: 7%;
+  font-weight: 700;
+  font-family: DM Sans, sans-serif;
+}
+
+.add--story--div input,
+select {
+  width: 55%;
+  height: 2.5vw;
+}
+#Heading--input {
+  margin-left: 3.8%;
+}
+.label--inputs--div select {
+  margin-left: 3%;
+}
+
+.label--inputs--div > label,
+input,
+select {
+  margin-top: 2.5%;
+}
+#PRV--NXT--POST--Div {
+  border: 1px solid transparent;
+}
+#PRV--NXT--POST--Div > button {
+  padding: 2% 4%;
+}
+#PRV--NXT--POST--Div > button:nth-child(1) {
+  background-color: rgb(126, 255, 115);
+}
+#PRV--NXT--POST--Div > button:nth-child(2) {
+  background-color: rgb(115, 171, 255);
+}
+#PRV--NXT--POST--Div > button:nth-child(3) {
+  background-color: rgb(255, 115, 115);
+  margin-left: 30%;
+  margin-top: 1%;
+}
+
+@media screen and (max-width: 757px) {
+  .Bookmarks--button,
+  #Addstory--button {
+    display: none;
+  }
+  .user__profile_photo_smallSCR {
+    position: absolute;
+    border: 1px solid transparent;
+    display: inline;
+    width: 30px;
+    height: 30px;
+    top: 29px;
+  }
+  .Info--Logout {
+    position: absolute;
+    width: 95vw;
+    height: 37vh;
+    top: 50px;
+    z-index: 6;
+    padding: 2vh;
+    text-align: left;
+  }
+  #Logout--button {
+    display: block;
+  }
+  .Info--Logout > .Three_hidden_button {
+    display: block;
+    background-color: rgb(255, 115, 115);
+    border-radius: 15px;
+    padding: 7px 21px;
+    font-weight: 900;
+    font-family: DM Sans, sans-serif;
+    margin: 4px auto;
+  }
+  .user__profile_photo {
+    display: none;
+  }
+  .Info--Logout > h4 {
+    margin-left: 33px;
+  }
+}
