@@ -11,13 +11,14 @@ app.use(express.json());
 //to get details from frontend
 app.use(
   cors({
-    origin: ["*"],
-    // credentials: true,
+    origin: ["http://localhost:3000", "*"],
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+    credentials: true,
   })
 );
+
 dotenv.config();
 //***************** ---- ******************
-const PORT = process.env.PORT || 8000;
 
 //------------------------------------------------->   USER API (START)  ------------------------------------------------->
 app.get("/", (req, res) => {
@@ -369,7 +370,7 @@ app.get("/AUserBookmark/:username", async (req, res) => {
 });
 
 //------------------------------------------------------------------->  USER BookMark (END)  ------------------------------------------------------> */
-app.listen(PORT, async () => {
+app.listen(process.env.PORT, async () => {
   try {
     await mongoose.connect(process.env.MONGODB_URL);
     console.log(`Server successfully running on ${process.env.PORT}`);
