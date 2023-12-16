@@ -20,7 +20,9 @@ dotenv.config();
 const PORT = process.env.PORT || 8000;
 
 //------------------------------------------------->   USER API (START)  ------------------------------------------------->
-
+app.get("/", (req, res) => {
+  res.send("Welcome to Home");
+});
 // Register API- ************************
 app.post("/register", async (req, res) => {
   try {
